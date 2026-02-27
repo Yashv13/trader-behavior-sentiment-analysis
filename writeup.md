@@ -4,7 +4,7 @@
 
 ## Methodology
 
-Two datasets were combined: Bitcoin Fear/Greed index (daily) and Hyperliquid historical trade data (~100k trades across ~400 accounts). After standardizing timestamps and joining on date, trades were labeled with the day's sentiment — Fear or Greed.
+Two datasets were combined: Bitcoin Fear/Greed index (daily) and Hyperliquid historical trade data (~211k trades across 32 unique trader accounts). After standardizing timestamps and joining on date, trades were labeled with the day's sentiment — Fear or Greed.
 
 The core design decision was to build a **fixed trader identity profile** first — grouping by account across the entire dataset to compute each trader's lifetime average leverage, trade frequency, win rate, and PnL volatility. These become permanent segment labels. This avoids the problem of a trader flipping between "high leverage" and "low leverage" day to day depending on a single trade, which would make behavioral segmentation meaningless.
 
