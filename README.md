@@ -31,6 +31,17 @@ Opens at `localhost:8501` in your browser.
 
 ---
 
+## Dashboard Preview
+
+### Overview
+![Overview](assets/overview.png)
+
+### Segments
+![Segments](assets/segments.png)
+
+### Strategy Rules
+![Strategy](assets/strategy_rules.png)
+
 ## Files
 
 ```
